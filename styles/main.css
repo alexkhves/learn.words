@@ -1,0 +1,136 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #efeff4;
+}
+
+.contact_us {
+  display: flex;
+  flex-direction: column;
+  height: 30vw;
+}
+
+.contact_us .question {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 2vw;
+}
+
+.contact_us .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 25vw 0 25vw;
+}
+
+.first_field {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.field_name, .field_email, .field_message {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+
+.field_message {
+  width: 100%;
+}
+
+.contact_us label {
+  text-align: left;
+  margin: 0.5vw 0 0.3vw 1.5vw;
+}
+
+input[type=name], input[type=email], textarea {
+  width: 100%;
+  border: 0.05vw solid #ccc;
+  border-radius: 0.3vw;
+  box-sizing: border-box;
+  padding: 0.8vw 3vw 0.8vw 1.5vw;
+}
+
+textarea {
+  height: 10vw;
+}
+
+input[type=submit] {
+  width: 13%;
+  height: 2.5vw;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  background: #007AFF;
+  color: #FFFFFF;
+  margin: 2vw;
+}
+
+.footer {
+  font-weight: 400;
+  font-size: 0.7vw;
+  text-align: right;
+  padding: 0 2.5vw 0 10vw;
+}
+
+@media only screen and (max-device-width: 767px) and (orientation: portrait) {
+  .contact_us {
+    height: 70vw;
+  }
+
+  .contact_us .form {
+    margin: 0 15vw 0 15vw;
+  }
+
+  .field_name, .field_email, .field_message {
+    font-size: 3vw;
+    margin-top: 2vw;
+  }
+
+  textarea {
+    height: 25vw;
+  }
+
+  input[type=submit] {
+    width: 20%;
+    height: 6vw;
+    border-radius: 1vw;
+    font-size: 3vw;
+    margin: 5vw;
+  }
+
+  .footer {
+    font-size: 1.5vw;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .contact_us {
+    height: 60vw;
+  }
+
+  .contact_us .form {
+    margin: 0 15vw 0 15vw;
+  }
+
+  .field_name, .field_email, .field_message {
+    font-size: 2vw;
+    margin-top: 2vw;
+  }
+
+  textarea {
+    height: 25vw;
+  }
+
+  input[type=submit] {
+    width: 15%;
+    height: 5vw;
+    border-radius: 1vw;
+    font-size: 2vw;
+    margin: 5vw;
+  }
+
+  .footer {
+    font-size: 1vw;
+  }
+}
