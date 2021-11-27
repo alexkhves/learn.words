@@ -1,13 +1,10 @@
 {
     "applinks": {
+        "apps": [],
         "details": [
             {
-                "appIDs": [ "7KJ82K5S92.com.ah.learnWords" ],
-                "components": [
-                    {
-                        "/": "/events/*"
-                    }
-                ]
+                "appID": "7KJ82K5S92.com.ah.learnWords",
+                "paths": ["/": "/events/*"]
             }
         ]
     }
